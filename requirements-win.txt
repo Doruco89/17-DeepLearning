@@ -1,0 +1,65 @@
+# 딥러닝의 정석 with 파이토치 - 실습 환경 (Windows x64 / Python 3.12)
+#
+# [설치 순서] PyTorch 는 CUDA 빌드를 별도 인덱스에서 받아야 하므로 2단계로 설치합니다.
+#   1) uv pip install numpy==1.26.4
+#   2) uv pip install --index-url https://download.pytorch.org/whl/cu128 torch torchvision torchaudio
+#   3) uv pip install -r requirements-win.txt
+#
+# [Windows 관련 주의사항]
+#   - PyTorch: PyPI 의 기본 win_amd64 휠은 CPU 전용입니다.
+#     이 PC 의 RTX 5060(Blackwell, sm_120)은 CUDA 12.8 이상 빌드가 필요하므로
+#     반드시 cu128 인덱스에서 설치해야 GPU 가속이 동작합니다. (macOS 의 MPS 대체)
+#   - TensorFlow: Windows 네이티브는 2.11 부터 GPU 미지원이라 tensorflow-intel(CPU) 로 설치됩니다.
+#     1·2장 비교 예제용이므로 문제 없습니다.
+#   - librosa/soundfile: Windows 에서는 soundfile 휠에 libsndfile 이 포함되어 별도 설치가 불필요합니다.
+#     단, mp3 등 일부 포맷 로딩 시 ffmpeg 가 필요할 수 있습니다. (winget install ffmpeg)
+
+# numpy는 1.x로 고정합니다.
+#   - gym 0.25.2 가 구 numpy API 를 사용
+#   - tensorflow 2.16.x 가 numpy<2 를 요구
+numpy==1.26.4
+
+# --- 핵심 프레임워크 ---
+# torch / torchvision / torchaudio 는 위 2) 단계에서 cu128 인덱스로 설치합니다.
+torchsummary
+
+# --- 데이터 / 시각화 ---
+matplotlib
+seaborn
+pandas
+scikit-learn
+scikit-optimize
+yfinance
+
+# --- 영상 처리 (8장, 5장) ---
+pillow
+opencv-python
+
+# --- 오디오 처리 (10장) ---
+librosa
+soundfile
+
+# --- 사전학습 모델 (7장, 9장, 11장) ---
+transformers
+timm
+
+# --- 모델 배포 / 최적화 (12장) ---
+# onnx 1.18+ 는 ml_dtypes>=0.5 를 요구하는데,
+# tensorflow 2.16.2 가 ml_dtypes~=0.3.1 로 고정하므로 충돌합니다.
+onnx==1.17.0
+onnxruntime
+
+# --- 강화학습 (11장, CartPole-v1) ---
+# 노트북이 구(舊) Gym API 를 사용합니다:
+#   state = env.reset()                       -> 배열 반환 (0.26+ 는 튜플)
+#   next_state, reward, done, _ = env.step(a) -> 4-튜플 (0.26+ 는 5-튜플)
+gym==0.25.2
+pygame
+
+# --- 비교 예제용 (1장, 2장) ---
+tensorflow==2.16.2
+
+# --- 노트북 실행 환경 ---
+jupyterlab
+ipykernel
+ipywidgets
