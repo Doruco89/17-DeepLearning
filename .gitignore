@@ -2,3 +2,7 @@ data/
 *.zip
 수업자료/
 .venv/
+helmet/
+chest_xray/
+*.pt
+*.pth
