@@ -1,0 +1,8 @@
+{
+  "selected_config": "ResNet18_T3_lr5e-5_wd1e-4",
+  "best_epoch": 17,
+  "val_macro_f1": 0.9590946013327856,
+  "test_accuracy": 0.9728682170542635,
+  "test_balanced_accuracy": 0.9560785870096277,
+  "test_macro_f1": 0.9576172662154411
+}

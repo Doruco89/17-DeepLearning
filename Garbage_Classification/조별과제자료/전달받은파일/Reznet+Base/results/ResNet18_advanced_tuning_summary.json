@@ -1,0 +1,11 @@
+{
+  "selected_config": "ResNet18_T4_ls005",
+  "best_epoch": 12,
+  "val_macro_f1": 0.9594933931614674,
+  "hypothesis_p_value": 0.46550689862027594,
+  "hypothesis_decision": "H0 기각하지 못함",
+  "selected_threshold": 0.9,
+  "test_accuracy": 0.9728682170542635,
+  "test_balanced_accuracy": 0.9575362785049596,
+  "test_macro_f1": 0.9590311186269518
+}

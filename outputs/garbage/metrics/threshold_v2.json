@@ -1,0 +1,13 @@
+{
+  "split_tag": "v2",
+  "target_class": "plastic",
+  "ovr_target_recall": 0.95,
+  "alpha_best": 0.3,
+  "alpha_test_macro_f1": 0.9177,
+  "alpha_base_macro_f1": 0.9182,
+  "tau": 0.68,
+  "tau_target_auto_acc": 0.98,
+  "tau_test_coverage": 0.9250968575118381,
+  "tau_test_auto_accuracy": 0.9785946952070731,
+  "selected_on": "validation only"
+}

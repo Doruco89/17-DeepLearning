@@ -1,0 +1,11 @@
+{
+  "selected_model": "ResNet18_Aug",
+  "selection_metric": "Validation Macro F1",
+  "validation_macro_f1": 0.9546975032659256,
+  "augmentation_test_p_value": 0.4247150569886023,
+  "augmentation_test_decision": "H0 기각하지 못함",
+  "selected_confidence_threshold": 0.95,
+  "test_accuracy": 0.966838931955211,
+  "test_balanced_accuracy": 0.9508787736625787,
+  "test_macro_f1": 0.9511845607170416
+}

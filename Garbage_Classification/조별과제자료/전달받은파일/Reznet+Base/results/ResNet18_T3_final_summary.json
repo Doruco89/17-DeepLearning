@@ -1,0 +1,17 @@
+{
+  "selected_model": "ResNet18_T3_lr5e-5_wd1e-4",
+  "selection_reason": "course-aligned parsimonious model",
+  "best_epoch": 17,
+  "validation_accuracy": 0.97114556416882,
+  "validation_balanced_accuracy": 0.9571954085571001,
+  "validation_macro_f1": 0.9590946013327856,
+  "test_accuracy": 0.9728682170542635,
+  "test_balanced_accuracy": 0.9560785870096277,
+  "test_macro_f1": 0.9576172662154411,
+  "recommended_minimum_validation_coverage": 0.95,
+  "selected_threshold": 0.86,
+  "test_coverage": 0.9595176571920758,
+  "test_accepted_count": 2228,
+  "test_selective_accuracy": 0.9869838420107719,
+  "test_selective_macro_f1": 0.9783033377950634
+}

@@ -6,3 +6,5 @@ helmet/
 chest_xray/
 *.pt
 *.pth
+cityscapes/
+*.csv

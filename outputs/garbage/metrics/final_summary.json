@@ -1,0 +1,11 @@
+{
+  "test_accuracy": 95.53,
+  "test_macro_f1": 0.9421,
+  "test_weighted_f1": 0.9553,
+  "val_macro_f1": 0.9371,
+  "n_test": 2325,
+  "n_errors": 104,
+  "best_class": "clothes",
+  "worst_class": "plastic",
+  "top_confusion": "clothes -> shoes (12건)"
+}

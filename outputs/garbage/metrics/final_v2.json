@@ -1,0 +1,26 @@
+{
+  "split_tag": "v2",
+  "model": "ResNet18",
+  "exp": "finetune",
+  "image_size": 224,
+  "n_val": 2323,
+  "n_test": 2323,
+  "val": {
+    "accuracy": 0.9539,
+    "macro_f1": 0.9318,
+    "macro_rec": 0.93,
+    "macro_pre": 0.9357,
+    "weighted_f1": 0.9539,
+    "macro_auc": 0.9982
+  },
+  "test": {
+    "accuracy": 0.9453,
+    "macro_f1": 0.9182,
+    "macro_rec": 0.9183,
+    "macro_pre": 0.9208,
+    "weighted_f1": 0.9452,
+    "macro_auc": 0.9981
+  },
+  "worst_class": "plastic",
+  "worst_f1": 0.8082
+}

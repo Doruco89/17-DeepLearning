@@ -1,0 +1,62 @@
+# ============================================================
+# 쓰레기 이미지 12종 분류 — 팀 프로젝트 실행 환경
+# Python 3.12
+# ============================================================
+#
+# [1] PyTorch는 이 파일로 설치되지 않습니다.
+#     CUDA 버전에 맞는 인덱스를 지정해 먼저 설치하세요.
+#
+#     uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#
+#     (개발 환경: torch 2.11.0+cu128 / 2.13.0+cu130, torchvision 0.28.0)
+#     CPU만 사용할 경우:
+#     uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# [2] 나머지 패키지 설치
+#
+#     uv pip install -r requirements.txt
+#
+# [3] 노트북별 필요 조건
+#
+#     03_Team_Analysis.ipynb  -> GPU 불필요, 원본 이미지 불필요.
+#                                data/ 폴더의 확률 배열만으로 완전 재현됩니다.
+#     그 외 노트북            -> GPU 및 원본 데이터셋 필요.
+#                                Kaggle mostafaabla/garbage-classification 을
+#                                프로젝트 최상단의 garbage_classification/ 아래에
+#                                12개 클래스 폴더가 오도록 압축 해제하세요.
+#                                (노트북이 './garbage_classification' 을 참조합니다.
+#                                 A3_color_analysis.ipynb 만 'data/garbage_classification'
+#                                 을 참조하므로, 그 노트북을 재실행할 경우에만 경로를
+#                                 맞춰주면 됩니다.)
+# ============================================================
+
+# --- 수치 연산 · 데이터 처리 ---
+numpy>=1.26,<3
+pandas>=2.0
+scipy>=1.11
+
+# --- 머신러닝 ---
+scikit-learn>=1.4
+
+# --- 이미지 처리 ---
+pillow>=10.0
+opencv-python>=4.8
+
+# --- 시각화 ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- 진행 표시 ---
+tqdm>=4.66
+
+# --- 노트북 실행 환경 ---
+jupyter>=1.0
+ipykernel>=6.29
+ipython>=8.20
+
+# ============================================================
+# 정확한 버전 고정이 필요하면 아래 명령으로 재생성하세요.
+#   uv pip freeze > requirements.txt
+# 단, torch/torchvision 줄은 CUDA 빌드 태그(+cu128) 때문에
+# 일반 PyPI에서 설치되지 않으므로 위 [1] 안내를 유지해야 합니다.
+# ============================================================

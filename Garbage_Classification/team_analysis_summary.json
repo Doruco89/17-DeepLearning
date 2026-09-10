@@ -1,0 +1,35 @@
+{
+  "final_model": "EfficientNetV2-S (unfreeze, img 224, lr 1e-4)",
+  "n_images": 15484,
+  "split": {
+    "train": 10832,
+    "test": 2334,
+    "val": 2318
+  },
+  "majority_baseline": {
+    "accuracy": 0.3398,
+    "macro_f1": 0.0423
+  },
+  "test": {
+    "accuracy": 0.9859,
+    "balanced_acc": 0.979,
+    "macro_f1": 0.9787,
+    "weighted_f1": 0.9859,
+    "macro_recall": 0.979,
+    "macro_prec": 0.9787,
+    "macro_auc": 0.9998
+  },
+  "bootstrap_gap_ci": [
+    0.0046,
+    0.0102
+  ],
+  "threshold": {
+    "target_class": "plastic",
+    "alpha_best": 0.0,
+    "alpha_changed": 0,
+    "tau": 0.53,
+    "tau_test_coverage": 0.9966,
+    "tau_test_auto_accuracy": 0.9884
+  },
+  "selected_on": "validation only"
+}

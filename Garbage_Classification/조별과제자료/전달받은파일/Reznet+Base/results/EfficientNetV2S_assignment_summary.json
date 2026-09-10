@@ -1,0 +1,11 @@
+{
+  "selected_model": "EfficientNetV2S_Aug",
+  "selection_metric": "Validation Macro F1",
+  "validation_macro_f1": 0.9738424532090552,
+  "augmentation_test_p_value": 0.33193361327734455,
+  "augmentation_test_decision": "H0 기각하지 못함",
+  "selected_confidence_threshold": 0.95,
+  "test_accuracy": 0.9832041343669251,
+  "test_balanced_accuracy": 0.9759103628772207,
+  "test_macro_f1": 0.9759213453391196
+}

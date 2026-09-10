@@ -1,0 +1,11 @@
+{
+  "selected_model": "BaseCNN_NoAug",
+  "selection_metric": "Validation Macro F1",
+  "validation_macro_f1": 0.8290727371513279,
+  "augmentation_test_p_value": 1.0,
+  "augmentation_test_decision": "H0 기각하지 못함",
+  "selected_confidence_threshold": 0.7,
+  "test_accuracy": 0.8617571059431525,
+  "test_balanced_accuracy": 0.8222142850966905,
+  "test_macro_f1": 0.8256740023254827
+}

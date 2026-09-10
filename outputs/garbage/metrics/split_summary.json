@@ -1,0 +1,11 @@
+{
+  "n_images": 15484,
+  "n_classes": 12,
+  "ratio": "70/15/15",
+  "v1_method": "train_test_split(stratify) x2",
+  "v2_method": "StratifiedGroupKFold(10) -> StratifiedGroupKFold(2)",
+  "v1_leaked_groups": 13,
+  "v1_leaked_images": 26,
+  "v2_leaked_groups": 0,
+  "mcnemar_pairs": 378
+}
