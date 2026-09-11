@@ -8,3 +8,4 @@ chest_xray/
 *.pth
 cityscapes/
 *.csv
+*.npy
