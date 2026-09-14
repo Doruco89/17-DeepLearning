@@ -9,3 +9,6 @@ chest_xray/
 cityscapes/
 *.csv
 *.npy
+*.png
+output/
+Garbage_Classification/
